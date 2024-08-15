@@ -1,0 +1,53 @@
+
+{% load static %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University</title>
+        <link rel="stylesheet" href="{% static 'main/university.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container image">
+            <div class="image"><img src="{{ use.profil.image.url }}" alt="ESPA logo"></div>
+            
+        </div>
+        <div class="container information">
+            <div class="item"><p><span class="bold">Nom Utilisateur:</span> {{ use.username}}</div>
+
+            {% if use.profil.type_etablissement == False%}
+
+            <div class="item"><p><span class="bold">NOM:</span>{{ use.first_name}}</p></div>
+            <div class="item"><p><span class="bold">PRENOM(S): </span>{{ use.last_name}}</p></div>
+            <div class="item"><p><span>Adresse Emails:</span> {{ use.email}}</p></div>
+            <div class="item"><p><span>contact: </span>{{ use.profil.numero_de_telephone }}</p></div>
+            <div class="item"><p><span>Addresse: </span>{{ use.profil.adresse }}</p></div>
+            <div class="item"><p><span>Cerrière révé: </span>{{ use.profil.carrier_reve }}</p></div>
+            <div class="item"><p>Etablissement féquanté: <span> {{ use.profil.etablissement_freq }}</p></div>
+    
+
+
+            {% else %}
+
+              <div class="item"><p><span class="bold">NOM:</span>{{ use.first_name}}</p></div>
+            <div class="item"><p><span class="bold">PRENOM(S): </span>{{ use.last_name}}</p></div>
+            <div class="item"><p><span>Adresse Emails:</span> {{ use.email}}</p></div>
+            <div class="item"><p><span>contact: </span>{{ use.profil.numero_de_telephone }}</p></div>
+            <div class="item"><p><span>Addresse: </span>{{ use.profil.adresse }}</p></div>
+            <div class="item"><p>{{ use.profil.cerrier_reve }}</p></div>
+            <div class="item"><p>Etablissement féquanté: <span> {{ use.profil.etablissement_freq }}</p></div>
+            {{ use.last_name}}
+
+            {% endif %}
+            <div class="item leave">
+                <table>
+                    <tr>
+                        <td><i class="fas fa-sign-out-alt"></i></td>
+                        <td><a href="{% url 'main:index' %}">&laquo;<button type="submit">sortir</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    </html>

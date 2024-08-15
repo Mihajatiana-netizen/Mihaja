@@ -1,0 +1,165 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnivTrack</title>
+    <link rel="stylesheet" href="{% static 'acceuil/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="UnivTrack.js" async></script>
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="nav-list">
+            <li class="logo">UnivTrack</li>
+            <a href="{% url 'accounts:login' %}"><li> <button type="submit" class=" connexion ">connexion</button></li></a>
+            <a href="{% url 'accounts:register' %}"><li><button type="submit" class="button connexion">Créer un compte</button></li></a>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="texte">
+            <h1>Êtes vous à la recherche d'Univeristé ?</h1>
+            <p>Notre plateforme centralise les informations sur les universités et centres de formation à Madagascar, vous aide à choisir le bon parcours, 
+                et vous connecte avec les meilleures opportunités éducatives
+                <br>
+                <br>
+
+                Inscrivez-vous maintenant et commencez à explorer 
+                les meilleures options d'études pour un avenir brillant.
+            </p>
+            <p class="compte1"><button type="submit" class="button1">Créer un compte</button></p>
+        </div>
+        <div class="image">
+            <img src="{% static 'acceuil/images/photo.jpg' %}">
+        </div>
+    </div>
+    <div class="autreContainer">
+        <img src="{% static 'acceuil/images/autreImage.jpg' %}" class="autreImage">
+    
+        <table>
+            <tr><td><h5>Accès aux Informations </h5></td></tr>
+            <tr><td><p>Découvrez les programmes des meilleures universités et centres de formation à Madagascar.</p></td></tr>
+            <tr><td><h5>Outils d’Orientation :</h5></td></tr>
+            <tr><td><p>Testez vos compétences et trouvez le parcours qui vous correspond le mieux.</p></td></tr>
+            <tr><td><h5>Opportunités :</h5></td></tr>
+            <tr><td><p>Restez informé des dernières annonces et événements éducatifs.</p></td></tr>
+        </table>
+    </div>
+    <div class="sponsors">
+        <p>Nos sponsors:</p>
+        <table class="icon">
+            <tr>
+                <td><img src="{% static 'acceuil/images/peec.jpg' %}"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div class="identification">
+        <div class="element">
+            <div class="sary"><img src="{% static 'acceuil/images/Rakoto.jpg' %}"></div>
+            <p><span class="bold">NOM: </span>RAKOTOSON</p>
+            <p><span class="bold">PRENOM: </span>Ezra</p>
+            <p><span class="bold">FILIERE: </span>Electronique</p>
+            <p><span class="bold">NIVEAU: </span>Licence 2</p>
+            <div class="contact">
+                <table>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-envelope"></i></td>
+                        <td class="tableau email">ezra@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-phone"></i></td>
+                        <td class="tableau">0345226956</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="element bas">
+            <div class="sary"><img src="{% static 'acceuil/images/andry.jpeg' %}" alt=""></div>
+            <p><span class="bold">NOM: </span>RAMANATOANINA</p>
+            <p><span class="bold">PRENOM: </span>Andry Christian</p>
+            <p><span class="bold">FILIERE: </span>Electronique</p>
+            <p><span class="bold">NIVEAU: </span>Licence 2</p>
+            <div class="contact">
+                <table>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-envelope"></i></td>
+                        <td class="tableau email">christian.rmnt426@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-phone"></i></td>
+                        <td class="tableau">0342973105</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="element">
+            <div class="sary"><img src="{% static 'acceuil/images/mika.jpeg' %}" alt=""></div>
+            <p><span class="bold">NOM: </span>NJAKATIANA</p>
+            <p><span class="bold">PRENOM: </span>Herizo Michael</p>
+            <p><span class="bold">FILIERE: </span>Electronique</p>
+            <p><span class="bold">NIVEAU: </span>Licence 2</p>
+            <div class="contact">
+                <table>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-envelope"></i></td>
+                        <td class="tableau email">ezra@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-phone"></i></td>
+                        <td class="tableau">0345226956</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="element bas">
+            <div class="sary"><img src="{% static 'acceuil/images/tsiaro.jpg' %}" alt=""></div>
+            <p><span class="bold">NOM: </span>HARINJAKANIAINA</p>
+            <p><span class="bold">PRENOM: </span>Tsiaro Nantenaina Muriellah</p>
+            <p><span class="bold">FILIERE: </span>Electronique</p>
+            <p><span class="bold">NIVEAU: </span>Licence 2</p>
+            <div class="contact">
+                <table>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-envelope"></i></td>
+                        <td class="tableau email">ezra@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-phone"></i></td>
+                        <td class="tableau">0345226956</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="element">
+            <div class="sary"><img src="{% static 'acceuil/images/mihaja.jpeg' %}" alt=""></div>
+            <p><span class="bold">NOM: </span>Mihajatiana</p>
+            <p><span class="bold">PRENOM: </span>Ezra</p>
+            <p><span class="bold">FILIERE: </span>Electronique</p>
+            <p><span class="bold">NIVEAU: </span>Licence 2</p>
+            <div class="contact">
+                <table>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-envelope"></i></td>
+                        <td class="tableau email">ezra@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="tableau icon"><i class="fa-solid fa-phone"></i></td>
+                        <td class="tableau">0345226956</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+   
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

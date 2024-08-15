@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'accounts/login.css' %}">
+
+</head>
+<body>
+    <div class="container">
+
+<h1>Connectez vous<h1>
+<p>avez-vous un compte?<button type="submit" class="compte"><a href="{% url 'accounts:register' %}">Creer un compte</a></button></p>
+
+
+{% for message in messages %}
+
+    <p>{{ message }}</p>
+{% endfor %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+
+    <input type="submit" value="Se connecter">
+</form>
+
+
+    
+        <h1>Connectez Vous</h1>
+        <div class="button">
+            <ul>
+                <li><input class="input" type="text" placeholder="Nom Utilisateurs" id=""></li>
+                <li><input type="password" placeholder="Mot de passe" name="" id=""></li>
+                <li><button type="submit" class="valider">VALIDER</button></li>
+                <li><button type="submit" class="annuler">annuler</button></li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    list-style: none;
+}
+body{
+    background: linear-gradient(to right,#acb6e5,#86fde8);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20% 30%;
+}
+.container h1{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 13px;
+    padding-top: 5px;
+
+}
+.container p{
+    margin: 0;
+    font-size: 15px;
+    border: none;
+}
+
+.button{
+    width: 100%;
+}
+button.compte{
+    border: none;
+    background-color: white;
+    color: #5fe0c9;
+}
+.button button{
+    border-radius: 5px;
+    width: 85%;
+    height: 38px;
+}
+.valider{
+    border: 1px solid rgb(131, 118, 118);
+    background-color: #404063;
+    color: white;
+}
+.valider:hover{
+    background-color: rgb(83, 83, 133);
+}
+ul{
+    padding: 25px 0 0 0;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+input{
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid rgb(204, 195, 195);
+    width: 85%;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 20px;
+    height: 38px;
+}
+ul li{
+    
+    margin-top: 15px;
+}
+.input:focus{
+    outline: none;
+}
+.annuler{
+    border: none;
+    background-color: white;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 768px){
+    .container{
+        
+        margin: 100px 20px;
+    }
+    .container h1{
+        font-size: 30px;
+
+    }
+    .container p{
+        font-size: 12px;
+    }
+}

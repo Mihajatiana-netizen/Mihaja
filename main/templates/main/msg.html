@@ -1,0 +1,20 @@
+{% load static %}
+<h1>liste des messages</h1>
+
+{% for user in users %}
+
+
+<h2>{{ user.username }}</h2>
+<p>{{ user.profil.etablissement_freq }}</p>
+<p>{{user.profil.niveau}}</p>
+<img src="{{user.profil.image.url}}">
+
+<br>
+
+
+
+
+{% endfor %}
+
+
+
